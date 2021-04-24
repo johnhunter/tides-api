@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/johnhunter/tides-api/issues"
   },
-  "homepage": "https://github.com/johnhunter/tides-api#readme"
+  "homepage": "https://github.com/johnhunter/tides-api#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "query-string": "^7.0.0"
+  }
 }
