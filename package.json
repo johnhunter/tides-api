@@ -1,0 +1,19 @@
+{
+  "name": "tides-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnhunter/tides-api.git"
+  },
+  "author": "john@johnhunter.info",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnhunter/tides-api/issues"
+  },
+  "homepage": "https://github.com/johnhunter/tides-api#readme"
+}
