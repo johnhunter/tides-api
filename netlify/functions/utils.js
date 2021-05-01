@@ -1,11 +1,6 @@
 const fetch = require('node-fetch');
 const queryString = require('query-string');
 
-const appendUrlQuery = (url, params = {}) => {
-  const query = queryString.stringify(params);
-  return query ? `${url}?${query}` : url;
-};
-
 const jsonResponse = (statusCode, body) => {
   const headers = {
     'content-type': 'application/json'
@@ -44,7 +39,7 @@ const apiGet = (apiKey, url, params) => {
     },
   };
 
-  return fetch(appendUrlQuery(url, params), options)
+  return fetch(queryString.stringifyUrl({ url, query: params }), options)
     .then(handleError)
     .then(res => res.json());
 };
